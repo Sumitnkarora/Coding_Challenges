@@ -23,6 +23,7 @@ namespace BT_All
             // Traversing BST in Inorder fashion
             //bst.Inorder(bst.Root);
             bst.Print();
+            bst.SumOfAllPaths(bst.Root,0);
             Console.ReadKey();
         }
     }

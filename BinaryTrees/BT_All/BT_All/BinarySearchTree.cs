@@ -61,7 +61,7 @@ namespace BT_All
                 return;
             if(root.left == null && root.right == null)
             {
-                Console.WriteLine(sum);
+                Console.WriteLine(sum + root.data);
             }
             SumOfAllPaths(root.left, root.data + sum);
             SumOfAllPaths(root.right, root.data + sum);
