@@ -2,7 +2,7 @@
 {
 
     // Creating Binary Search Tree node class
-    public class Node
+    public class Node 
     {
         public int data;
         public Node left;
