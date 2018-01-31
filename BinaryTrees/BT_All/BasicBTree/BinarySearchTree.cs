@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BT_All
+namespace BasicBTree
 {
     public class BinarySearchTree
     {

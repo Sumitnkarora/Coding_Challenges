@@ -1,4 +1,4 @@
-﻿namespace BT_All
+﻿namespace BasicBTree
 {
 
     // Creating Binary Search Tree node class

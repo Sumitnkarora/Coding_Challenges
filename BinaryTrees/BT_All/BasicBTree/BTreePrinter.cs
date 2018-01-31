@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BT_All
+namespace BasicBTree
 {
     public static class BTreePrinter
     {
