@@ -11,7 +11,7 @@ namespace MinStepsToOneByReducing
         static void Main(string[] args)
         {
             DateTime start = DateTime.Now;
-            int target = 300;
+            int target = 11;
             int arrayLength = target + 1;
             int[] preCalculatedResults = new int[arrayLength];
             preCalculatedResults[0] = 1;
@@ -31,6 +31,7 @@ namespace MinStepsToOneByReducing
         /// <returns></returns>
         static int CalculateMinStepsDP(int arrayLength, int[] preCalculatedResults)
         {
+            int conditionDivideByTwo = int.MaxValue, conditionDivideByThree = int.MaxValue;
             if (arrayLength < 0)
             {
                 Console.WriteLine("Values lesser than 0 are not supported");
@@ -44,10 +45,23 @@ namespace MinStepsToOneByReducing
 
             for (int i = 4; i < arrayLength + 1; i++)
             {
-                preCalculatedResults[i] = 1 + Math.Min(CalculateMinStepsDP(i - 1, preCalculatedResults), Math.Min(i % 2 == 0 ? (CalculateMinStepsDP(i / 2, preCalculatedResults)) : int.MaxValue,
-                                                                                            i % 3 == 0 ? CalculateMinStepsDP(i / 3, preCalculatedResults) : int.MaxValue));
+                if (i % 2 == 0)
+                    conditionDivideByTwo = CalculateMinStepsDP(i / 2, preCalculatedResults);
+                else
+                    conditionDivideByTwo = int.MaxValue;
+                if (i % 3 == 0)
+                    conditionDivideByThree = CalculateMinStepsDP(i / 3, preCalculatedResults);
+                else
+                    conditionDivideByThree = int.MaxValue;
+                preCalculatedResults[i] = 1 + Minimum(CalculateMinStepsDP(i - 1, preCalculatedResults), conditionDivideByTwo, conditionDivideByThree);
             }
             return preCalculatedResults[arrayLength];
+        }
+
+        static int Minimum(int a, int b, int c)
+        {
+            int retValue = Math.Min(a, Math.Min(b, c));
+            return retValue;
         }
     }
 }
