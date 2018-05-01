@@ -10,7 +10,7 @@ namespace Fibonacci
     {
         public static int RecursiveFib(int n)
         {
-            if (n < 2)
+            if (n <= 2)
                 return 1;
             return RecursiveFib(n - 1) + RecursiveFib(n - 2);
         }
@@ -26,12 +26,12 @@ namespace Fibonacci
 
         public static void Main(string[] args)
         {
-            int n = 5;
+            int n = 6;
             int x = RecursiveFib(n);
             Console.WriteLine(x.ToString());
-            int[] array = new int[6];
+            int[] array = new int[n];
             DPFibonacci(n, array);
-            
+            Console.WriteLine(array[n - 1]);
             Console.ReadLine();
         }
     }
