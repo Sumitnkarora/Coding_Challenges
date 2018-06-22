@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTRee_Search", "BTRee_Search.csproj", "{B9A01453-EEF1-4B57-8E76-B0B36807D565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBTree", "..\BasicBTree\BasicBTree.csproj", "{48AD208D-9B3A-4ECF-A2BC-5528C3C9DA0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A01453-EEF1-4B57-8E76-B0B36807D565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A01453-EEF1-4B57-8E76-B0B36807D565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A01453-EEF1-4B57-8E76-B0B36807D565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A01453-EEF1-4B57-8E76-B0B36807D565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48AD208D-9B3A-4ECF-A2BC-5528C3C9DA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AD208D-9B3A-4ECF-A2BC-5528C3C9DA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AD208D-9B3A-4ECF-A2BC-5528C3C9DA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AD208D-9B3A-4ECF-A2BC-5528C3C9DA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0893AAD6-9A77-49D3-951D-8646F5C00CFE}
+	EndGlobalSection
+EndGlobal
